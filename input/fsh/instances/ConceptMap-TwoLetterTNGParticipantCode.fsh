@@ -1,5 +1,5 @@
 
-Alias: $TNGParticipantsWHOUAT = http://worldhealthorganization.github.io/smart-trust/TrustNetworkGatewayParticipantsWHOUAT
+Alias: $GDHCNParticipantsWHOUAT = http://worldhealthorganization.github.io/smart-trust-gdhcn/GDHCNParticipantsWHOUAT
 Alias: $ISO3166alpha3 = http://terminology.hl7.org/CodeSystem/iso3166-1edition2alpha3
 Alias: $ISO3166alpha2 = http://terminology.hl7.org/CodeSystem/iso3166-1edition2alpha2
 Alias: $ConceptMapRelationships = http://hl7.org/fhir/ValueSet/concept-map-relationship
@@ -7,11 +7,11 @@ Alias: $ConceptMapRelationships = http://hl7.org/fhir/ValueSet/concept-map-relat
 Instance: ConceptMatp-TwoLetterNGParticipantsCode-WHO-UAT
 InstanceOf: ConceptMap
 
-* sourceScope[+].sourceScopeCanonical($TNGParticipantsWHOUAT)
+* sourceScope[+].sourceScopeCanonical($GDHCNParticipantsWHOUAT)
 * targetScope[=]: $ISO3166alpha2 
 
-* group[+].source = $TNGParticipantsWHOUAT
-* group[=].target = $TNGParticipantsWHOUAT
+* group[+].source = $GDHCNParticipantsWHOUAT
+* group[=].target = $GDHCNParticipantsWHOUAT
 
 * group[=].element[+].code = #WHO-DEV
 * group[=].element[=].target = #XH //not surw what to do here

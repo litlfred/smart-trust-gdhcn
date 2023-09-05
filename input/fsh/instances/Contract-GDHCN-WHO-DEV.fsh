@@ -1,10 +1,10 @@
-Alias: $TNGContracts = http://worldhealthorganization.github.io/smart-trust/TrustNetworkGatewayContracts
+Alias: $GDHCNContracts = http://worldhealthorganization.github.io/smart-trust-gdhcn/GDHCNContracts
 Alias: $SignerTypes = http://terminology.hl7.org/CodeSystem/contractsignertypecodes
 Alias: $ContractStatus = http://hl7.org/fhir/contract-status
 Alias: $ContractSubTypes = http://hl7.org/fhir/ValueSet/contract-term-subtype
 
-Instance: TrustNetworkGateway-WHO-DEV
-InstanceOf: TrustNetworkGatewayContract
+Instance: GDHCN-WHO-DEV
+InstanceOf: GDHCNContract
 Description: """Representation that a Trust Network Participant of the WHO Global Digital Health Certification Network (GDHCN) has completed the onboarding process for participation in the Digital Documentation of COVID-19 Certificates domain"""
 
 
@@ -22,5 +22,5 @@ Description: """Representation that a Trust Network Participant of the WHO Globa
 * type[+].coding = #"DDCC" "Digital Documentation of COVID-19 Certficates (DDCC)"
 * type[+].coding = #"RACSEL-DDVS" "Digital Documentation of Vaccine Certifcates for RACSEL"
 
-* term[+].type = $TNGContracts#DDCC
+* term[+].type = $GDHCNContracts#DDCC
 * term[=].subtype = $ContractSubTypes#warranty
