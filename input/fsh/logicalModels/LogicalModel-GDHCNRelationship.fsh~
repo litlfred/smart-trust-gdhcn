@@ -1,6 +1,0 @@
-
-
-Alias: $TNGContracts = http://worldhealthorganization.github.io/smart-trust-gdhcn/TrustNetworkGatewayContracts
-Logical: GDHCNRelationship
-Parent: TrustNetworkGatewayRelationship
-* domain from $TNGContracts (extensible)
