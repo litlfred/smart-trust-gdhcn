@@ -3,13 +3,13 @@ Alias: $SignerTypes = http://terminology.hl7.org/CodeSystem/contractsignertypeco
 Alias: $ContractStatus = http://hl7.org/fhir/contract-status
 Alias: $ContractSubTypes = http://hl7.org/fhir/ValueSet/contract-term-subtype
 
-Instance: GDHCN-WHO-DEV
+Instance: GDHCN-WHO-UAT
 InstanceOf: GDHCNContract
 Description: """Representation that a Trust Network Participant of the WHO Global Digital Health Certification Network (GDHCN) has completed the onboarding process for participation in the Digital Documentation of COVID-19 Certificates domain"""
 
 
 
-* subject = Reference(Organization/WHO-DEV)
+* subject = Reference(Organization/WHO-UAT)
 * status = $ContractStatus#executed
 
 * signer[+].type = $SignerTypes#LEGAUTHN
