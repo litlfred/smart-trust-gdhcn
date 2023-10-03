@@ -20,6 +20,7 @@ Description: """Representation that a Trust Network Participant of the WHO Globa
 * legallyBinding[+].valueAttachment.url = "http://example.com/path/to/signed/letter-XCL"
 
 * type[+].coding = #"DDCC" "Digital Documentation of COVID-19 Certficates (DDCC)"
+* type[+].coding = #"RACSEL-DDVC" "Digital Documentation of Vaccine Certifcates for RACSEL"
 
 * term[+].type = $GDHCNContracts#DDCC
 * term[=].subtype = $ContractSubTypes#warranty
